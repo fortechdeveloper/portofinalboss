@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Yudha Pramudya (FastDev) — Pelajar & Developer dari Dlingo, Bantul, Yogyakarta. 58+ project web, IoT, dan tools." />
+  <meta name="theme-color" content="#050a18" />
+  <meta property="og:title" content="FastDev — Yudha Pramudya" />
+  <meta property="og:description" content="Portofolio developer muda dari Dlingo, Bantul, Yogyakarta. 58+ project web, IoT, dan tools." />
+  <meta property="og:type" content="website" />
+  <title>FastDev — Yudha Pramudya | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= SVG SPRITE ================= -->
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="ico-menu" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-close" viewBox="0 0 24 24">
+        <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-home" viewBox="0 0 24 24">
+        <path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-code" viewBox="0 0 24 24">
+        <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-layers" viewBox="0 0 24 24">
+        <path d="m12 3 9 5-9 5-9-5 9-5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="m3 13 9 5 9-5M3 18l9 5 9-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-send" viewBox="0 0 24 24">
+        <path d="M3 11.5 21 4l-7 17-2.5-7.5L3 11.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-pin" viewBox="0 0 24 24">
+        <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="ico-school" viewBox="0 0 24 24">
+        <path d="m2 9 10-5 10 5-10 5L2 9Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-spark" viewBox="0 0 24 24">
+        <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-star" viewBox="0 0 24 24">
+        <path d="m12 3 2.6 5.7 6.4.6-4.8 4.2 1.4 6.2L12 16.8 6.4 19.7l1.4-6.2L3 9.3l6.4-.6L12 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-arrow-down" viewBox="0 0 24 24">
+        <path d="M12 4v16M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-arrow-right" viewBox="0 0 24 24">
+        <path d="M4 12h16M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-external" viewBox="0 0 24 24">
+        <path d="M14 4h6v6M20 4 10 14M9 5H5v14h14v-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-github" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.8.8.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="ico-instagram" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+      </symbol>
+      <symbol id="ico-whatsapp" viewBox="0 0 24 24">
+        <path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M8.5 8.5c.2-.5.5-.5.8-.5h.6c.2 0 .4.1.5.4l.7 1.6c.1.2 0 .5-.2.6l-.6.6c.5 1 1.4 1.9 2.4 2.4l.6-.6c.2-.2.4-.2.6-.1l1.6.7c.3.1.4.3.4.5v.6c0 .3 0 .6-.5.8-.7.3-1.6.4-2.6 0-1.5-.5-3-1.4-4.3-2.7-1.3-1.3-2.2-2.8-2.7-4.3-.3-1-.2-1.9 0-2.6Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="ico-html" viewBox="0 0 24 24">
+        <path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M8 7h8l-.4 4H9.2l.3 3H15l-.2 2.5L12 17l-2.7-.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-css" viewBox="0 0 24 24">
+        <path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M16 7H8l.4 4h7.2l-.4 4H9.6l-.2 2 2.6.8 2.6-.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-js" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M10 10v5.5a1.5 1.5 0 0 1-3 0M14 10h2.5a1.5 1.5 0 0 1 0 3H15h1.5a1.5 1.5 0 0 1 0 3H14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-cpp" viewBox="0 0 24 24">
+        <path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 10h3M9.5 8.5v3M14 10h3M15.5 8.5v3M8 14h9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-arduino" viewBox="0 0 24 24">
+        <path d="M3 12c0-3 2.5-5 5-5 2 0 3.5 1.2 4 2.5C12.5 8.2 14 7 16 7c2.5 0 5 2 5 5s-2.5 5-5 5c-2 0-3.5-1.2-4-2.5-.5 1.3-2 2.5-4 2.5-2.5 0-5-2-5-5Z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M6 10v4M5 11h2M16 10v4M15 11h2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-chip" viewBox="0 0 24 24">
+        <rect x="6" y="6" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <rect x="10" y="10" width="4" height="4" fill="currentColor" opacity=".6"/>
+      </symbol>
+      <symbol id="ico-wifi" viewBox="0 0 24 24">
+        <path d="M2.5 9a15 15 0 0 1 19 0M5.5 12.5a10 10 0 0 1 13 0M8.5 16a5.5 5.5 0 0 1 7 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="19" r="1.4" fill="currentColor"/>
+      </symbol>
+      <symbol id="ico-sensor" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M6 6a8 8 0 0 0 0 12M18 6a8 8 0 0 1 0 12M3.5 3.5a12 12 0 0 0 0 17M20.5 3.5a12 12 0 0 1 0 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-wrench" viewBox="0 0 24 24">
+        <path d="M14.5 6.5a4 4 0 0 0 5 5L11 20a3 3 0 1 1-4-4l8.5-9.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="17" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="ico-rocket" viewBox="0 0 24 24">
+        <path d="M5 15c-1 2-1 4-1 4s2 0 4-1M9 9l6 6M14 4c2 0 5 1 6 2 1 1 2 4 2 6l-5 5-2-2-2-2-2-2-5 5-2-2 5-5 6-6Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-check" viewBox="0 0 24 24">
+        <path d="m4 12 5 5L20 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-filter" viewBox="0 0 24 24">
+        <path d="M3 5h18l-7 9v6l-4-2v-4L3 5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="ico-globe" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="ico-briefcase" viewBox="0 0 24 24">
+        <rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M3 13h18" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="ico-arrow-up" viewBox="0 0 24 24">
+        <path d="M12 20V4M5 11l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-heart" viewBox="0 0 24 24">
+        <path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="ico-copy" viewBox="0 0 24 24">
+        <rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ================= BACKGROUND BLOBS ================= -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <span class="blob blob-4"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="FastDev home">
+        <span class="brand-mark">
+          <svg><use href="#ico-code"></use></svg>
+        </span>
+        <span class="brand-text">
+          Fast<span>Dev</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#hero" class="nav-link is-active">
+          <svg><use href="#ico-home"></use></svg><span>Home</span>
+        </a>
+        <a href="#about" class="nav-link">
+          <svg><use href="#ico-user"></use></svg><span>About</span>
+        </a>
+        <a href="#skills" class="nav-link">
+          <svg><use href="#ico-layers"></use></svg><span>Skills</span>
+        </a>
+        <a href="#projects" class="nav-link">
+          <svg><use href="#ico-code"></use></svg><span>Projects</span>
+        </a>
+        <a href="#contact" class="nav-link">
+          <svg><use href="#ico-mail"></use></svg><span>Contact</span>
+        </a>
+      </nav>
+
+      <a href="#contact" class="btn btn-nav">
+        <span>Ngobrol Yuk</span>
+        <svg><use href="#ico-send"></use></svg>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <svg class="icon-open"><use href="#ico-menu"></use></svg>
+        <svg class="icon-close"><use href="#ico-close"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+          <div class="badge-clay">
+            <svg><use href="#ico-spark"></use></svg>
+            <span>Halo, saya FastDev</span>
+          </div>
+
+          <h1 class="hero-title">
+            Yudha <br />
+            <span class="gradient-text">Pramudya</span>
+          </h1>
+
+          <p class="hero-role">
+            <span class="role-static">Developer</span>
+            <span class="role-dynamic" id="roleDynamic">Web Apps</span>
+          </p>
+
+          <p class="hero-desc">
+            Pelajar di Yogyakarta, tinggal di <b>Dlingo, Bantul</b>. Fokus ngoding
+            <b>HTML</b>, <b>C++</b>, dan <b>IoT</b> — sudah menyelesaikan
+            <b>58+ project</b> nyata di internet.
+          </p>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <svg><use href="#ico-pin"></use></svg>
+              <span>Dlingo, Bantul, DIY</span>
+            </div>
+            <div class="meta-item">
+              <svg><use href="#ico-school"></use></svg>
+              <span>Pelajar Yogyakarta</span>
+            </div>
+            <div class="meta-item">
+              <svg><use href="#ico-wifi"></use></svg>
+              <span>Online &amp; Available</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg><use href="#ico-rocket"></use></svg>
+              <span>Lihat Project</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <svg><use href="#ico-mail"></use></svg>
+              <span>Kontak Saya</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <svg><use href="#ico-github"></use></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg><use href="#ico-instagram"></use></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="WhatsApp">
+              <svg><use href="#ico-whatsapp"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-frame">
+            <div class="photo-clay">
+              <img src="saya.jpg" alt="Foto Yudha Pramudya (FastDev)" loading="eager" />
+              <div class="photo-glow"></div>
+            </div>
+            <div class="float-card float-card-1">
+              <span class="dot"></span>
+              <span>Open for collab</span>
+            </div>
+            <div class="float-card float-card-2">
+              <svg><use href="#ico-star"></use></svg>
+              <span><b>58+</b> Project</span>
+            </div>
+            <div class="float-card float-card-3">
+              <svg><use href="#ico-chip"></use></svg>
+              <span>IoT &amp; Web Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll ke bawah">
+        <svg><use href="#ico-arrow-down"></use></svg>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">
+            <svg><use href="#ico-user"></use></svg>
+            <span>Tentang</span>
+          </span>
+          <h2 class="section-title">Kenalan Dulu, Yuk</h2>
+          <p class="section-sub">
+            Sedikit cerita tentang siapa saya dan bagaimana perjalanan ngoding saya dimulai.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <div class="glass-card about-card">
+              <h3>Halo, saya Yudha Pramudya 👋</h3>
+              <p>
+                Panggil saya <b>FastDev</b>. Saya seorang pelajar di salah satu sekolah
+                di Yogyakarta dan tinggal di <b>Dlingo, Bantul</b>. Ketertarikan saya
+                pada dunia pemrograman mulai dari rasa penasaran: bagaimana caranya
+                sebuah halaman web bisa hidup dan berinteraksi dengan pengguna.
+              </p>
+              <p>
+                Dari rasa penasaran itu, saya mulai belajar <b>HTML</b>, <b>CSS</b>,
+                <b>JavaScript</b>, lanjut ke <b>C++</b> untuk logika dan algoritma,
+                hingga <b>Arduino / ESP32</b> untuk project Internet of Things.
+                Semuanya saya pelajari secara otodidak, dari dokumentasi, forum,
+                dan eksperimen langsung.
+              </p>
+              <p>
+                Sampai sekarang saya sudah menyelesaikan <b>58+ project</b> yang
+                sudah live di internet — mulai dari web app, tools kecil, hingga
+                perangkat IoT. Saya percaya bahwa cara terbaik belajar adalah dengan
+                <b>membangun sesuatu</b> dan membagikannya ke publik.
+              </p>
+
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <svg><use href="#ico-check"></use></svg>
+                  <span>Self-taught developer sejak SMP</span>
+                </div>
+                <div class="highlight-item">
+                  <svg><use href="#ico-check"></use></svg>
+                  <span>Fokus Web Apps, C++, &amp; IoT</span>
+                </div>
+                <div class="highlight-item">
+                  <svg><use href="#ico-check"></use></svg>
+                  <span>Aktif membangun project nyata</span>
+                </div>
+                <div class="highlight-item">
+                  <svg><use href="#ico-check"></use></svg>
+                  <span>Berbasis di Dlingo, Bantul, Yogyakarta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-side reveal">
+            <div class="glass-card info-card">
+              <div class="info-row">
+                <svg><use href="#ico-user"></use></svg>
+                <div>
+                  <span class="info-label">Nama</span>
+                  <span class="info-value">Yudha Pramudya</span>
+                </div>
+              </div>
+              <div class="info-row">
+                <svg><use href="#ico-code"></use></svg>
+                <div>
+                  <span class="info-label">Nama Panggilan</span>
+                  <span class="info-value">FastDev</span>
+                </div>
+              </div>
+              <div class="info-row">
+                <svg><use href="#ico-pin"></use></svg>
+                <div>
+                  <span class="info-label">Domisili</span>
+                  <span class="info-value">Dlingo, Bantul, DIY</span>
+                </div>
+              </div>
+              <div class="info-row">
+                <svg><use href="#ico-school"></use></svg>
+                <div>
+                  <span class="info-label">Status</span>
+                  <span class="info-value">Pelajar Yogyakarta</span>
+                </div>
+              </div>
+              <div class="info-row">
+                <svg><use href="#ico-briefcase"></use></svg>
+                <div>
+                  <span class="info-label">Fokus</span>
+                  <span class="info-value">Web &amp; IoT Dev</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card quote-card">
+              <svg class="quote-icon"><use href="#ico-heart"></use></svg>
+              <p class="quote-text">
+                "Kalau mau bisa, ya dibikin. Bikin error, baca error, perbaiki.
+                Ulangi sampai jalan."
+              </p>
+              <span class="quote-author">— FastDev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="section section-stats" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-clay reveal" data-count="58">
+            <div class="stat-icon"><svg><use href="#ico-rocket"></use></svg></div>
+            <h3 class="stat-num"><span class="counter">0</span>+</h3>
+            <p class="stat-label">Project Selesai</p>
+          </div>
+          <div class="stat-clay reveal" data-count="3">
+            <div class="stat-icon"><svg><use href="#ico-code"></use></svg></div>
+            <h3 class="stat-num"><span class="counter">0</span></h3>
+            <p class="stat-label">Bidang Utama</p>
+          </div>
+          <div class="stat-clay reveal" data-count="29">
+            <div class="stat-icon"><svg><use href="#ico-spark"></use></svg></div>
+            <h3 class="stat-num"><span class="counter">0</span></h3>
+            <p class="stat-label">Tools &amp; Bahasa</p>
+          </div>
+          <div class="stat-clay reveal" data-count="100">
+            <div class="stat-icon"><svg><use href="#ico-heart"></use></svg></div>
+            <h3 class="stat-num"><span class="counter">0</span>%</h3>
+            <p class="stat-label">Semangat Belajar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">
+            <svg><use href="#ico-layers"></use></svg>
+            <span>Skills</span>
+          </span>
+          <h2 class="section-title">Yang Saya Kuasai</h2>
+          <p class="section-sub">
+            Kombinasi kemampuan teknis yang saya pakai sehari-hari untuk membangun project.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg class="skill-icon"><use href="#ico-html"></use></svg>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">Struktur web semantik, aksesibel, dan SEO-friendly.</p>
+            <div class="skill-bar"><span style="--level: 92%"></span></div>
+            <span class="skill-pct">92%</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg class="skill-icon"><use href="#ico-css"></use></svg>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">Layout modern, animasi, glassmorphism, responsive.</p>
+            <div class="skill-bar"><span style="--level: 88%"></span></div>
+            <span class="skill-pct">88%</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg class="skill-icon"><use href="#ico-js"></use></svg>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">DOM manipulation, async, fetch API, logika interaktif.</p>
+            <div class="skill-bar"><span style="--level: 85%"></span></div>
+            <span class="skill-pct">85%</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg class="skill-icon"><use href="#ico-cpp"></use></svg>
+            </div>
+            <h3 class="skill-name">C++</h3>
+            <p class="skill-desc">Algoritma, struktur data, logika pemrograman dasar.</p>
+            <div class="skill-bar"><span style="--level: 78%"></span></div>
+            <span class="skill-pct">78%</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg class="skill-icon"><use href="#ico-arduino"></use></svg>
+            </div>
+            <h3 class="skill-name">Arduino (.ino)</h3>
+            <p class="skill-desc">Sketch Arduino, kontrol aktuator, baca sensor.</p>
+            <div class="skill-bar"><span style="--level: 82%"></span></div>
+            <span class="skill-pct">82%</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg class="skill-icon"><use href="#ico-chip"></use></svg>
+            </div>
+            <h3 class="skill-name">ESP32 / ESP8266</h3>
+            <p class="skill-desc">IoT firmware, WiFi, MQTT, WebSocket server.</p>
+            <div class="skill-bar"><span style="--level: 80%"></span></div>
+            <span class="skill-pct">80%</span>
+          </div>
+        </div>
+
+        <div class="tools-row reveal">
+          <span class="tools-title">Tools harian:</span>
+          <span class="tool-chip">VS Code</span>
+          <span class="tool-chip">Arduino IDE</span>
+          <span class="tool-chip">Git &amp; GitHub</span>
+          <span class="tool-chip">Figma</span>
+          <span class="tool-chip">Chrome DevTools</span>
+          <span class="tool-chip">Termux</span>
+          <span class="tool-chip">Postman</span>
+          <span class="tool-chip">MQTT Explorer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">
+            <svg><use href="#ico-code"></use></svg>
+            <span>Projects</span>
+          </span>
+          <h2 class="section-title">58+ Project yang Sudah Live</h2>
+          <p class="section-sub">
+            Sebagian project yang sudah saya rilis dan pakai publik. Filter kategori
+            atau cari nama project di bawah.
+          </p>
+        </div>
+
+        <div class="projects-toolbar reveal">
+          <div class="filter-group" id="filterGroup" role="tablist" aria-label="Filter kategori">
+            <button class="filter-btn is-active" data-filter="all">
+              <svg><use href="#ico-layers"></use></svg>
+              <span>Semua</span>
+            </button>
+            <button class="filter-btn" data-filter="web">
+              <svg><use href="#ico-globe"></use></svg>
+              <span>Web App</span>
+            </button>
+            <button class="filter-btn" data-filter="iot">
+              <svg><use href="#ico-chip"></use></svg>
+              <span>IoT</span>
+            </button>
+            <button class="filter-btn" data-filter="tools">
+              <svg><use href="#ico-wrench"></use></svg>
+              <span>Tools</span>
+            </button>
+            <button class="filter-btn" data-filter="game">
+              <svg><use href="#ico-rocket"></use></svg>
+              <span>Game</span>
+            </button>
+            <button class="filter-btn" data-filter="landing">
+              <svg><use href="#ico-briefcase"></use></svg>
+              <span>Landing</span>
+            </button>
+          </div>
+
+          <div class="search-wrap">
+            <svg><use href="#ico-search"></use></svg>
+            <input
+              type="text"
+              id="projectSearch"
+              class="search-input"
+              placeholder="Cari project..."
+              autocomplete="off"
+              aria-label="Cari project"
+            />
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+
+        <div class="projects-empty" id="projectsEmpty" hidden>
+          <svg><use href="#ico-search"></use></svg>
+          <p>Project tidak ditemukan. Coba kata kunci lain.</p>
+        </div>
+
+        <div class="projects-footer reveal">
+          <p>Dan masih banyak project lain yang belum ditampilkan di sini.</p>
+          <a href="#contact" class="btn btn-primary">
+            <svg><use href="#ico-send"></use></svg>
+            <span>Kolaborasi Project</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">
+            <svg><use href="#ico-mail"></use></svg>
+            <span>Contact</span>
+          </span>
+          <h2 class="section-title">Punya Ide? Ngobrol Yuk.</h2>
+          <p class="section-sub">
+            Mau kolaborasi, tanya-tanya soal coding, atau sekadar say hi? Kirim pesan aja.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="glass-card contact-info-card">
+              <h3>Informasi Kontak</h3>
+              <p class="contact-note">
+                Saya biasanya balas dalam 1×24 jam. Untuk urusan cepat, langsung
+                chat WhatsApp aja.
+              </p>
+
+              <div class="contact-row" data-copy="fastdev@fastdev.my.id">
+                <div class="contact-row-icon">
+                  <svg><use href="#ico-mail"></use></svg>
+                </div>
+                <div class="contact-row-text">
+                  <span class="contact-row-label">Email</span>
+                  <span class="contact-row-value">fastdev@fastdev.my.id</span>
+                </div>
+                <button class="copy-btn" aria-label="Copy email">
+                  <svg><use href="#ico-copy"></use></svg>
+                </button>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-row-icon">
+                  <svg><use href="#ico-pin"></use></svg>
+                </div>
+                <div class="contact-row-text">
+                  <span class="contact-row-label">Lokasi</span>
+                  <span class="contact-row-value">Dlingo, Bantul, Yogyakarta</span>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-row-icon">
+                  <svg><use href="#ico-school"></use></svg>
+                </div>
+                <div class="contact-row-text">
+                  <span class="contact-row-label">Status</span>
+                  <span class="contact-row-value">Pelajar &amp; Freelance Dev</span>
+                </div>
+              </div>
+
+              <div class="contact-socials">
+                <a href="#" class="social-btn" aria-label="GitHub">
+                  <svg><use href="#ico-github"></use></svg>
+                </a>
+                <a href="#" class="social-btn" aria-label="Instagram">
+                  <svg><use href="#ico-instagram"></use></svg>
+                </a>
+                <a href="#" class="social-btn" aria-label="WhatsApp">
+                  <svg><use href="#ico-whatsapp"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <form class="glass-card contact-form" id="contactForm" novalidate>
+              <h3>Kirim Pesan</h3>
+
+              <div class="form-row">
+                <label class="form-label" for="inputName">Nama</label>
+                <input
+                  type="text"
+                  id="inputName"
+                  class="form-input"
+                  placeholder="Nama kamu"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="inputEmail">Email</label>
+                <input
+                  type="email"
+                  id="inputEmail"
+                  class="form-input"
+                  placeholder="email@contoh.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="inputSubject">Subjek</label>
+                <input
+                  type="text"
+                  id="inputSubject"
+                  class="form-input"
+                  placeholder="Mau bahas apa?"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="inputMessage">Pesan</label>
+                <textarea
+                  id="inputMessage"
+                  class="form-input form-textarea"
+                  placeholder="Tulis pesan kamu di sini..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <svg><use href="#ico-send"></use></svg>
+                <span>Kirim Pesan</span>
+              </button>
+
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="brand">
+          <span class="brand-mark"><svg><use href="#ico-code"></use></svg></span>
+          <span class="brand-text">Fast<span>Dev</span></span>
+        </a>
+        <p class="footer-desc">
+          Yudha Pramudya — Pelajar &amp; Developer dari Dlingo, Bantul, Yogyakarta.
+          Membangun web, IoT, dan tools nyata.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Project Unggulan</h4>
+        <a href="https://web2apk.fastdev.my.id" target="_blank" rel="noopener">web2apk.fastdev.my.id</a>
+        <a href="https://gmail.cuan.4dev.web.id" target="_blank" rel="noopener">gmail.cuan.4dev.web.id</a>
+        <a href="#projects">Lihat semua project →</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Sosial</h4>
+        <a href="#" aria-label="GitHub">
+          <svg><use href="#ico-github"></use></svg> GitHub
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg><use href="#ico-instagram"></use></svg> Instagram
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <svg><use href="#ico-whatsapp"></use></svg> WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="yearNow">2025</span> Yudha Pramudya (FastDev). All rights reserved.</p>
+        <p>Dibangun dengan HTML, CSS, dan JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">
+    <svg><use href="#ico-arrow-up"></use></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
